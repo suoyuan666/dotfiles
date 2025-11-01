@@ -58,11 +58,6 @@ mason_lspconfig.setup({
 
 lspconfig("clangd",  {
   init_options = {
-    fallbackFlags = {
-      '--std=c++23',
-      -- '-I/path/to/custom/include',
-    },
-
     arguments = {
       '--background-index',
       '--clang-tidy',

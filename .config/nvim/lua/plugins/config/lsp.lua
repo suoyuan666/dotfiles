@@ -56,7 +56,7 @@ mason_lspconfig.setup({
   automatic_enable = false
 })
 
-lspconfig("clangd",  {
+lspconfig("clangd", {
   init_options = {
     arguments = {
       '--background-index',
@@ -88,7 +88,17 @@ lspconfig("lua_ls", {
   end
 })
 
+lspconfig("rust_analyzer", {
+  inlayHints = {
+    enable = true,
+  },
+  on_attach = function(client, bufnr)
+    navic.attach(client, bufnr)
+  end
+})
+
 vim.lsp.enable("clangd")
 vim.lsp.enable("tinymist")
 vim.lsp.enable("pylsp")
 vim.lsp.enable("lua_ls")
+vim.lsp.enable("rust_analyzer")

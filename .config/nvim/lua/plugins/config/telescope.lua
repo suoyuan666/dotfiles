@@ -1,4 +1,5 @@
 local telescope = require("telescope")
+local builtin = require('telescope.builtin')
 local actions = require("telescope.actions")
 local transform_mod = require("telescope.actions.mt").transform_mod
 
@@ -11,6 +12,10 @@ local custom_actions = transform_mod({
     trouble.toggle("quickfix")
   end,
 })
+
+vim.keymap.set('n', '<leader>ss', function()
+  builtin.lsp_document_symbols()
+end, { desc = 'Telescope Document Symbols' })
 
 telescope.setup({
   defaults = {

@@ -13,6 +13,7 @@ I'm too lazy to update the screenshot, but basically not changed much
 |[cliphist](https://github.com/sentriz/cliphist)|Clipboard-Managers|
 |[grim](https://sr.ht/~emersion/grim/) + [slurp](https://github.com/emersion/slurp)|Screentshot tools|
 |[wofi](https://hg.sr.ht/~scoopta/wofi)|App launcher|
+|[fuzzel](https://codeberg.org/dnkl/fuzzel)|App launcher|
 |[mako](https://github.com/emersion/mako)|Notification daemon|
 |[foot](https://codeberg.org/dnkl/foot)|Terminal emulator|
 |[brightnessctl](https://github.com/Hummer12007/brightnessctl)|Brightness Control|

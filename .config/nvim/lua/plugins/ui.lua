@@ -22,10 +22,23 @@ return {
     end
   },
   {
-    'rcarriga/nvim-notify',
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- add any options here
+    },
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      {
+        "rcarriga/nvim-notify",
+        config = function ()
+          require('plugins.config.notify')
+        end
+      },
+    },
     config = function()
-      require("plugins.config.notify")
-    end
+      require("plugins.config.ui_noice")
+    end,
   },
   {
     'romgrk/barbar.nvim',

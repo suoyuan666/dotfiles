@@ -1,7 +1,7 @@
 {
     "position": "top",
     "modules-left": [
-        "sway/workspaces",
+        "niri/workspaces",
         "network",
         "cpu",
         "memory",
@@ -9,14 +9,15 @@
     "modules-center": [
         "mpris",
         "privacy",
-        "sway/window"
+        "niri/window"
     ],
     "modules-right": [
         "tray",
         "wireplumber",
         "backlight",
         "clock",
-        "battery"
+        "battery",
+        "power-profiles-daemon"
     ],
 
     "niri/window": {
@@ -196,5 +197,16 @@
                 "tooltip-icon-size": 24
             }
         ]
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "performance": "🚀",
+        "balanced": "⚖️",
+        "power-saver": "🔋",
+        "default": "⚡"
+      }
     }
 }

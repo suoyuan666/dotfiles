@@ -252,6 +252,7 @@ exec_always {
     gsettings set org.gnome.desktop.interface font-name 'Noto Sans Mono 11'
     gsettings set org.gnome.desktop.interface cursor-size 25
 }
+exec_always --no-startup-id /usr/libexec/polkit-mate-authentication-agent-1 &
 exec_always --no-startup-id /usr/bin/wlsunset -t 3200 -T 3400 &
 exec_always --no-startup-id /usr/bin/mako &
 exec_always --no-startup-id /usr/bin/firewall-applet &

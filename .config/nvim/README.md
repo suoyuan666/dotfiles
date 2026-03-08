@@ -12,25 +12,27 @@
 |快捷键|用途|
 |:--|:--|
 |ctrl + s|保存|
+|H/K|跳转到行头和行尾部|
 |ctrl + h,j,k,l|在编辑模式下进行上下左右的挪动|
 |tab/shift + tab|调整缩进，这个是在 visual 模式下使用的，我是用来选中一段，然后用 tab/shitt + tab 改变那一段的缩进|
-|alt + 1,2,3| 切换到第 1,2,3 个打开的文件|
+|alt + 1,2,3|切换到第 1,2,3 个打开的文件|
 |alt + c|关闭当前打开的文件|
-|space + tf|查找文件|
-|space + tg|调用 rigrep 搜索|
-|space + tgc|调出 git commit 信息窗口|
-|space + tgs|调出 git status 窗口|
-|space + td|显示 lsp 检查到的错误|
-|space + tld|跳转到符号定义的位置，前提是 lsp 能找到|
-|space + tlr|显示符号被引用的位置，前提是 lsp 能找到|
+|space + ff|查找文件|
+|space + gs|调用 rigrep 搜索|
+|space + gc|调出 git commit 信息窗口|
+|space + gs|调出 git status 窗口|
+|space + cd|显示 lsp 检查到的错误|
+|space + cld|跳转到符号定义的位置，前提是 lsp 能找到|
+|space + clr|显示符号被引用的位置，前提是 lsp 能找到|
 |space + lf|对当前文件进行 lsp 格式化|
 |space + rn|调用 lsp 进行符号重命名|
 |space + teh|分出一个水平的终端窗口| 
 |space + tev|分出一个竖直的终端窗口| 
 |space + tef|分出一个悬浮在中间的终端窗口| 
-|space + e|在左侧呼出一个文件管理器|
-|space + ec|关闭呼出来的文件管理器|
+|space + e|呼出一个文件管理器，我使用了 mini.files，它提供了和 neovim 一样的编辑方式直接新建文件或者重命名文件等|
 
 我甚至配置了 dap，但是我本身不太用，也懒得写相关的快捷键了。
 
 有的快捷键我没写上去，比如 `K` 可以调出 lsp 对这个符号的说明（比如是变量的话就说明它的类型）
+
+我不得不吐槽 `$` 是跳转到行尾，而且 `#` 是搜索还是什么的功能，这导致我很容易在想要跳转到行尾的时候按下 `#`，为此我特地设置了 `H/L`

@@ -1,5 +1,20 @@
 return {
   {
+    "ibhagwan/fzf-lua",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("fzf-lua").setup({
+        winopts = {
+          height  = 0.85,
+          width   = 0.80,
+          preview = {
+            layout = 'vertical',
+          },
+        },
+      })
+    end
+  },
+  {
     'nvim-telescope/telescope.nvim',
     branch = '0.1.x',
     dependencies = {
@@ -14,13 +29,6 @@ return {
   {
     "stevearc/dressing.nvim",
     event = "VeryLazy",
-  },
-  {
-    'numToStr/Comment.nvim',
-    event = "VeryLazy",
-    config = function()
-      require('Comment').setup()
-    end
   },
   {
     'windwp/nvim-autopairs',

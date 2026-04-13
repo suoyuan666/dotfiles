@@ -39,3 +39,11 @@ vim.diagnostic.config({
 vim.diagnostic.config({
   update_in_insert = true,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.opt_local.wrap = false
+    vim.opt_local.expandtab = true
+  end,
+})
